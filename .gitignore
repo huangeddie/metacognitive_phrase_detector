@@ -1,0 +1,8 @@
+**/.DS_Store
+*.icloud
+**/__pycache__/**
+**/.idea/**
+**/.ipynb_checkpoints/**
+.RData
+.RHistory
+CHEM104-revisedROSTER-*

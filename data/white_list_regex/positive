@@ -1,0 +1,10 @@
+do take my word
+i can see
+i guess
+from my point of view
+it seems I feel
+when thinking(\s*\w*){0,5}\s*I
+I(\s*\w*){0,2}keep in mind
+it made me(\s*\w*){0,2}realize
+imho
+imo
