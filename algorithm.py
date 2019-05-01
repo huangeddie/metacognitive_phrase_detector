@@ -74,7 +74,7 @@ class TextMask:
                 pass
 
 
-def analyze_text(text):
+def analyze_text(text, pos_begin='\033[42;37m', neg_begin='\033[41;37m', end='\033[m'):
     """
     Arguably the most important function.
     :param text:
@@ -170,10 +170,10 @@ def analyze_text(text):
     # Create the annotated post
     annotated_post = ' '.join(tokens)
 
-    annotated_post = re.sub(Annotation.BEGIN_POSITIVE, '\033[42;37m', annotated_post)
-    annotated_post = re.sub(Annotation.BEGIN_NEGATIVE, '\033[41;37m', annotated_post)
+    annotated_post = re.sub(Annotation.BEGIN_POSITIVE, pos_begin, annotated_post)
+    annotated_post = re.sub(Annotation.BEGIN_NEGATIVE, neg_begin, annotated_post)
 
-    annotated_post = re.sub(Annotation.END, '\033[m', annotated_post)
+    annotated_post = re.sub(Annotation.END, end, annotated_post)
 
     return mc_phrases, annotated_post
 
