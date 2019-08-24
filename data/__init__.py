@@ -1,6 +1,6 @@
 from enum import Enum
 
-data_dir = 'algorithm/data/'
+data_dir = 'metacognitive_phrase_detector/data/'
 
 positive_connotation = 'positive'
 negative_connotation = 'negative'
@@ -21,7 +21,7 @@ words_positive_file_path = words_dir + positive_connotation
 words_negative_file_path = words_dir + negative_connotation
 
 negations_file_path = data_dir + 'negations'
-meta_cognition_dir = 'algorithm/data/'
+
 
 def new_name_list(file_path):
     list = []

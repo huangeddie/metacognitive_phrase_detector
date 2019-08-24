@@ -2,7 +2,7 @@ import logging
 import re
 import string
 
-from algorithm.data import MCOracle, Connotation, MCPhrase
+from metacognitive_phrase_detector.data import MCOracle, Connotation, MCPhrase
 
 class Annotation:
     BEGIN = 'BEGIN_MC_PHRASE'
