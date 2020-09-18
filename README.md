@@ -2,7 +2,9 @@
 
 This project is the result of research on automatic detection of metacognition (thinking about thinking) from user-generated text. If you would like to learn more, see this paper:
 
-> Huang, E., Valdiviejas, H., & Bosch, N. (in press). I'm sure! Automatic detection of metacognition in online course discussion forums. In Proceedings of the 8th International Conference on Affective Computing and Intelligent Interaction (ACII 2019). Piscataway, NJ: IEEE.
+> Huang, E., Valdiviejas, H., & Bosch, N. (2019). I’m sure! Automatic detection of metacognition in online course discussion forums. Proceedings of the 8th International Conference on Affective Computing and Intelligent Interaction (ACII 2019), 241–247. https://doi.org/10.1109/ACII.2019.8925506
+
+Note that the web-based interface is no longer available, though the Python interface (this repository) is.
 
 ## Installation
 
