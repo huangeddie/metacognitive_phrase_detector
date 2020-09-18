@@ -84,8 +84,6 @@ def analyze_text(text, pos_begin='\033[42;37m', neg_begin='\033[41;37m', end='\0
     oracle = MCOracle()
 
     text = _lowercase_remove_punctuation(text)
-    
-    text = text.replace('790361b7e5', 'don')
 
     max_phrase_length = 5
 
@@ -98,7 +96,6 @@ def analyze_text(text, pos_begin='\033[42;37m', neg_begin='\033[41;37m', end='\0
         regex_positive_phrases, text_mask = _analyze_regex_phrases(text_mask, connotation, list)
 
         mc_phrases += regex_positive_phrases
-
 
     tokens = text_mask.raw_text.split()
 
@@ -159,6 +156,10 @@ def analyze_text(text, pos_begin='\033[42;37m', neg_begin='\033[41;37m', end='\0
 
                 # Add phrase to list
                 mc_phrases.append(mc_phrase)
+                # Start over
+                count_down = -1
+                negative = False
+                in_annotation = False
         else:
             # Start over
             count_down = -1
