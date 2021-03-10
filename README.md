@@ -24,4 +24,6 @@ text = "Although your estimate doesn't agree with mine of 20, I believe you brin
 
 mc_phrases, annotated_post = analyze_text(text)
 print(annotated_post)
+for mcp in mc_phrases:
+    print(mcp.phrase, mcp.connotation)
 ```
