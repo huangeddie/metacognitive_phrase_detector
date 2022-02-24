@@ -180,7 +180,12 @@ def analyze_text(text, pos_begin='\033[42;37m', neg_begin='\033[41;37m', end='\0
 
 
 def _lowercase_remove_punctuation(text):
-    text = text.lower()
+    try:
+        text = text.lower()
+    except AttributeError:
+        print('\n*** ERROR *** Could not convert string to lowercase')
+        print('Perhaps the data contain numbers or NaN/null values?')
+        raise
     exclude = set(string.punctuation + 'â€™')
     text = ''.join(ch for ch in text if ch not in exclude)
     return text

@@ -8,3 +8,6 @@ I(\s*\w*){0,2}keep in mind
 it made me(\s*\w*){0,2}realize
 imho
 imo
+i found out
+i(\s+\S+){,2}\s+(get|got|gotten|getting)(\s+\S+){,2}\s+right
+my head hurts
